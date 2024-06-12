@@ -1,0 +1,11 @@
+.content-area {
+    background-color: #212327;
+    border-radius: 20px;
+    padding: 20px;
+    width: 80%;
+    min-height: 65vh;
+    margin: 10%;
+    margin-top: 5px;
+    text-align: center;
+    /* Add additional styles as needed */
+}

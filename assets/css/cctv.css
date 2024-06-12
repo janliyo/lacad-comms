@@ -1,0 +1,82 @@
+/* Content area styles */
+.content-area {
+  background-color: #212327;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  width: 75%;
+  margin: auto;
+  margin-top: 5px;
+  /* Add additional styles as needed */
+}
+
+.table-container {
+    width: 100%; /* Full width of the content-area */
+    height: 100%; /* Full height of the content-area */
+    margin: 0; /* Remove margins */
+    padding: 0; /* Remove padding */
+    border-radius: 20px;
+  }
+  
+table {
+    width: 100%; /* Full width of the table-container */
+    height: 100%; /* Full height of the table-container */
+    border-collapse: collapse; /* Collapse borders */
+    margin: 0; /* Remove margins */
+    color: #C1BBBB;
+}
+
+th, td {
+    border-bottom: 1px solid #3A3C3F;
+    border-radius: 20px;
+    padding: 8px;
+    text-align: left;
+}
+  th {
+    background-color: #212327;
+  }
+  .thumbnail {
+    width: 50px;
+    height: auto;
+  }
+  .action-buttons {
+    text-align: right;
+  }
+  .button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  tr:last-child td {
+    border-bottom: none;
+  }
+
+/*create ka nalang ng new html file leo na upload new, wala pa cctv recording template sa drive eh*/
+  a[href="/uploadNew"] {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-right: 2%;
+    margin-bottom: 10px;
+    background-color: #3C61AC; /* Blue background */
+    color: #fff; /* White text */
+    text-decoration: none; /* Removes underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    float: right;
+    background-image: url('../images/add.png'); /* Replace with your image path */
+    background-size: 25px 25px; /* Adjust as needed */
+    background-repeat: no-repeat;
+    background-position: 8% center; /* Position the image 5% from the left and centered vertically */
+    padding-left: 40px; /* Add some padding so the text doesn't overlap the image */
+    font-weight: normal;
+}
+
+a[href="/uploadNew"]:hover {
+    background-color:#3C61AC; /* Darker blue on hover */
+}

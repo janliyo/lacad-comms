@@ -1,0 +1,179 @@
+body {
+  /* No styles needed for body */
+}
+
+.container {
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+}
+
+.search-bar {
+  margin-bottom: 20px;
+  margin-left: 8%;
+  margin-top: 10px;
+  width: 50%;
+}
+
+#search-product {
+  width: 100%;
+  padding: 10px;
+  background-color: #212327;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+.products-container {
+  flex: 1; /* Take up remaining space */
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  margin-right: 20px; /* Add some space between the products and checkout area */
+}
+
+.product-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  justify-content: start;
+  gap: 10px;
+  margin-left: 8%;
+}
+
+.product-button {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #212327;
+  border-radius: 5px;
+  color: white;
+  border: none;
+}
+
+.product-display {
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-left: 8%;
+}
+
+.product-item {
+  position: relative; /* For absolute positioning of name-tag */
+  z-index: 1;
+}
+
+.product-item img {
+  width: 100px; /* Adjust as needed */
+  height: auto;
+  display: block;
+}
+
+.name-tag {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent gray */
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+
+
+.cart {
+  width: 300px;
+  border-left: 1px solid #ccc;
+  padding-left: 20px;
+}
+
+.cart-total {
+  margin-top: 20px;
+}
+
+#proceed-to-payment {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  float: right;
+}
+
+.content-area {
+  justify-content: space-between; /* Space out main content and checkout */
+  align-items: stretch; /* Stretch children to fill the height */
+  background-color: #212327; /* Gray background */
+  border-radius: 20px; /* Rounded edges */
+  width: 45%; /* Full width */
+  height: 80%; /* Full height */
+  margin: 10px;
+  margin-left: 10%;
+  margin-top: 20px;
+  max-width: 100vw;
+  max-height: 65vh;
+}
+
+.main-content {
+  flex-grow: 1; /* Allow main content to grow and fill space */
+  /* Add additional styles for main content as needed */
+}
+
+.checkout-container {
+  grid-column: 2; /* Places the checkout container in the second column */
+  background-color: #212327; /* Gray background */
+  border-radius: 20px; /* Rounded edges */
+  padding: 20px;
+  box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Creates two equal columns */
+  gap: 20px; /* Space between the columns */
+  margin-top: 2%;
+  margin-left: 5%;
+}
+
+.products-container {
+  grid-column: 1; /* Places the products container in the first column */
+}
+
+.transaction-id {
+margin-bottom: 20px; /* Space below the transaction ID */
+}
+
+.item-list {
+list-style: none; /* No bullets for the list */
+padding: 0; /* No padding */
+margin: 0 0 20px 0; /* Space below the list */
+}
+
+.item-list li {
+display: flex;
+justify-content: space-between; /* Space out the item name and price */
+margin-bottom: 10px; /* Space between items */
+}
+
+.total {
+border-top: 2px dotted #777; /* Dotted line above the total */
+padding-top: 10px; /* Space above the total */
+margin-top: 20px; /* Space below the item list */
+display: flex;
+justify-content: space-between; /* Space out the word 'Total' and the amount */
+}
+
+.proceed-to-payment {
+background-color: #4CAF50; /* Green background for the button */
+color: #fff; /* White text color */
+text-align: center;
+padding: 15px;
+border: none; /* No border */
+border-radius: 4px; /* Slightly rounded corners for the button */
+cursor: pointer; /* Pointer cursor on hover */
+display: block; /* Block display to take full width */
+margin-top: 20px; /* Space above the button */
+}
+
+a {
+text-decoration: none;
+}

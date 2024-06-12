@@ -1,0 +1,188 @@
+.content-area {
+    background-color: #212327; /* Gray background */
+    border-radius: 20px; /* Rounded edges */
+    width: 88%; /* Full width */
+    height: 80%; /* Full height */
+    margin: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 60px;
+    max-width: 100vw;
+    max-height: 65vh;
+    /* Add additional styles as needed */
+}
+
+.content-area1 {
+    background-color: #212327;
+    border-radius: 20px;
+    padding: 20px;
+    width: 80%;
+    min-height: 65vh;
+    margin: 10%;
+    margin-top: 5px;
+    text-align: center;
+    /* Add additional styles as needed */
+}
+
+
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    /* Additional styling as needed */
+}
+
+
+/* General table styles */
+.table {
+    width: 100%; /* Full-width */
+    margin-top: 5%;
+    border-collapse: collapse; /* Collapse borders */
+    border-radius: 15px; /* Adjust as needed */
+    overflow: hidden; /* Ensures the border radius is applied to the table */
+    
+}
+
+/* Table headers */
+.table th {
+    background-color: #1C242E; /* Light grey background */
+    color: white;
+    text-align: left; /* Left-align text */
+    border-bottom: 1px solid #383A3E; /* Add a bottom border */
+    padding: 15px; /* Add padding */
+}
+
+/* Table cells */
+.table td {
+    background-color: #212327; /* Light grey background */
+    color: white;
+    border-bottom: 1px solid #383A3E; /* Add a bottom border */
+    padding: 25px; /* Add padding */
+}
+
+/* Table rows on hover */
+.table tr:hover {
+    background-color: #ddd; /* Add a grey background color */
+}
+
+/* Links */
+.table a {
+    color: #999; /* Dark grey color */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Links on hover */
+.table a:hover {
+    color: white; /* Light grey color */
+}
+
+
+#searchInput {
+    float: left;
+    width: 35%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10%;
+    border: 1px solid #999; /* Lighter border color */
+    border-radius: 8px; /* Increased border radius for a pill-like shape */
+    background-color: #393939; /* Darker background color */
+    color: #fff; /* White text color */
+    background-image: url('../images/search.png'); /* Replace with your image path */
+    background-size: 45px 35px; /* Adjust as needed */
+    background-repeat: no-repeat;
+    background-position: right; /* Position the image to the right */
+    padding-right: 40px; /* Add some padding so the text doesn't overlap the image */
+}
+
+/* If you want to add a search icon inside the input field, you can use something like this */
+#searchInput::placeholder {
+    padding-left: 30px; /* Adjust as needed */
+    background-image: url("static/images/search.png"); /* Replace with your icon image path */
+    background-repeat: no-repeat;
+}
+
+a[href="/addProduct"] {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-right: 2%;
+    margin-bottom: 10px;
+    background-color: #3C61AC; /* Blue background */
+    color: #fff; /* White text */
+    text-decoration: none; /* Removes underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    float: right;
+    background-image: url('../images/add.png'); /* Replace with your image path */
+    background-size: 25px 25px; /* Adjust as needed */
+    background-repeat: no-repeat;
+    background-position: 8% center; /* Position the image 5% from the left and centered vertically */
+    padding-left: 40px; /* Add some padding so the text doesn't overlap the image */
+}
+
+a[href="/addProduct"]:hover {
+    background-color:#3C61AC; /* Darker blue on hover */
+}
+
+
+#pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.high-stock {
+    color: green; /* Text color */
+    border: 2px solid green; /* Border color */
+    padding: 10px; /* Increased padding */
+    border-radius: 15px; /* Adjust for roundness of border */
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.1); /* Slight background color */
+}
+
+.needs-attention {
+    color: orange;
+    border: 2px solid orange;
+    padding: 10px;
+    border-radius: 15px;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.low-stock {
+    color: red;
+    border: 2px solid red;
+    padding: 10px;
+    border-radius: 15px;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.high-stock, .needs-attention, .low-stock {
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+.high-stock:hover {
+    color: white; /* Text color on hover */
+    background-color: green;
+    box-shadow: 0 0 5px green; /* Glow effect on hover */
+}
+
+.needs-attention:hover {
+    color: white; /* Text color on hover */
+    background-color: orange;
+    box-shadow: 0 0 5px orange; /* Glow effect on hover */
+}
+
+.low-stock:hover {
+    color: white; /* Text color on hover */
+    background-color: red;
+    box-shadow: 0 0 5px red; /* Glow effect on hover */
+}
+
+.table-image {
+    width: 50%;
+    height: 50%;
+}
+
+

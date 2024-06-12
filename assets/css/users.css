@@ -1,0 +1,162 @@
+.content-container {
+  display: flex; /* This will arrange child elements in a row */
+  justify-content: space-between; /* This will put some space between the two content areas */
+}
+
+.content-area1 {
+  background-color: #212327; /* Gray background */
+  border-radius: 20px; /* Rounded edges */
+  width: 100%; /* Adjust width as needed */
+  height: auto; /* Full height */
+  margin: 10px;
+  max-width: 65vw;
+  min-height: 80vh;
+  margin-left: 10%;
+  padding: 40px;
+  padding-bottom: 20px;
+  /* Add additional styles as needed */
+}
+
+.users-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.user-count {
+  position: absolute;
+  top: 100%; /* Adjust as needed to place it right below the Users header */
+  left: 0;
+  margin-top: 5px; /* Adjust as needed for spacing */
+  display: block;
+}
+
+.users-info {
+  display: flex;
+  align-items: center;
+}
+
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+
+}
+
+.users-table th, .users-table td {
+  border-bottom: 1px solid #333; /* Border line at the bottom only */
+  padding: 10px;
+  text-align: left;
+}
+
+.users-table th:first-child, .users-table td:first-child {
+  border-bottom: none; /* No border for the image placeholder */
+}
+
+.user-image {
+  width: 30px; /* Small image placeholder */
+  height: 30px; /* Small image placeholder */
+  border-radius: 50%; /* Circular image placeholder */
+  margin-right: 10px; /* Space between image and username */
+}
+
+#searchInput {
+  float: left;
+  width: calc(100% - 8%);
+  margin-bottom: 10px;
+  margin-left: 10%;
+  border: 1px solid #999; /* Lighter border color */
+  border-radius: 8px; /* Increased border radius for a pill-like shape */
+  background-color: #393939; /* Darker background color */
+  color: #fff; /* White text color */
+  background-image: url('../images/search.png'); /* Replace with your image path */
+  background-size: 45px 35px; /* Adjust as needed */
+  background-repeat: no-repeat;
+  background-position: right; /* Position the image to the right */
+  padding-right: 40px; /* Add some padding so the text doesn't overlap the image */
+}
+
+/* If you want to add a search icon inside the input field, you can use something like this */
+#searchInput::placeholder {
+  padding-left: 30px; /* Adjust as needed */
+  background-image: url("static/images/search.png"); /* Replace with your icon image path */
+  background-repeat: no-repeat;
+}
+
+.status.active {
+  color: #4CAF50; /* Active status color */
+}
+
+a[href="/usermanagement"]:hover {
+  background-color:#3C61AC; /* Darker blue on hover */
+}
+
+.content-area2 {
+  background-color: #212327; /* Gray background */
+  border-radius: 20px; /* Rounded edges */
+  width: 45%; /* Adjust width as needed */
+  height: auto; /* Full height */
+  margin: 10px;
+  max-width: 20vw;
+  min-height: 90vh;
+  margin-right: 2%;
+  padding-bottom: 30px;
+  /* Add additional styles as needed */
+}
+
+.user-details {
+  padding: 20px;
+}
+
+.user-avatar {
+  width: 100px; /* Adjust as needed */
+  height: 100px; /* Adjust as needed */
+  border-radius: 50%; /* Circular avatar */
+  margin-bottom: 20px;
+}
+
+.user-details h3 {
+  margin: 0;
+  font-size: 24px; /* Adjust as needed */
+  margin-bottom: 10px; 
+}
+
+.user-role, .user-status {
+  font-size: 18px; /* Adjust as needed */
+  margin: 15px;
+}
+
+.user-info p {
+  margin: 15px;
+}
+
+.update-btn {
+  background-color: #4CAF50; /* Button background color */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.update-btn:hover {
+  background-color: #45a049; /* Darker shade on hover */
+}
+
+.profile-image {
+  width: 50px;  /* Adjust the width as needed */
+  height: 50px; /* Adjust the height as needed */
+  object-fit: cover; /* Ensures the image covers the entire element without stretching */
+  border-radius: 10%; /* Makes the image circular */
+}
+
+/* Remove background color for dropdown button */
+.dropdown-toggle {
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+

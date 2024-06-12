@@ -1,0 +1,93 @@
+.content-area {
+    background-color: #212327; /* Gray background */
+    border-radius: 20px; /* Rounded edges */
+    width: 85%; /* Full width */
+    height: 80%; /* Full height */
+    margin: 10px;
+    margin-left: 10%;
+    margin-top: 20px;
+    max-width: 100vw;
+    min-height: 85vh;
+    color: white;
+    padding: 20px;
+    /* Add additional styles as needed */
+}
+
+.form-group {
+  margin-bottom: 15px;
+  width: 50%;
+}
+
+.form-container {
+    /* Your existing styles */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* This will help push the buttons to the bottom */
+    height: 100%; /* Make sure the form container takes full height of its parent */
+}
+
+.image-upload {
+    /* Styles for image upload section */
+}
+
+.form-group-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col-md-6 {
+    width: 48%; /* Adjust the width as necessary */
+    padding: 0 15px; /* Spacing between columns */
+}
+
+.form-group label {
+  display: block;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.form-group input[type="number"],
+.form-group input[type="text"],
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Style for the 'Cancel' button */
+.btn-cancel {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-cancel:hover {
+    background-color: #5a6268;
+}
+
+/* Align buttons in the middle bottom */
+.form-buttons {
+    display: flex;
+    justify-content: center; /* This will center the buttons */
+    gap: 10px; /* This adds space between the buttons */
+    margin-top: 20px; /* This adds space above the buttons */
+}
+
+/* Your existing styles for .btn-primary */
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}

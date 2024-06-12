@@ -1,0 +1,69 @@
+div #graphs{
+    width: 100%;
+    height: 90%;
+}
+#header{
+    height: 50px;
+    float: right;
+    margin-right: 5%;
+}
+
+.dashboard-content {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-auto-rows: minmax(150px, 120px);
+    gap: 10px;
+    
+}
+
+.box {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.box.large {
+    grid-column: span 5;
+    grid-row: span 2;
+    background-color: #212327;
+}
+
+.box.medium {
+    grid-column: span 2;
+    grid-row: span 1;
+    background-color: #212327;
+}
+
+.box.small {
+    grid-column: span 1;
+    grid-row: span 1;
+    background-color: #212327;
+}
+
+.box.small-1 {
+    grid-column: span 3;
+    grid-row: span 1;
+    background-color: #5A7CCE;
+    color: white;
+}
+
+.box.small:hover, .box.medium:hover, .box.large:hover {
+    color: white; /* Text color on hover */
+    background-color: #2A2E34;
+    box-shadow: 0 0 5px #2A2E34; /* Glow effect on hover */
+}
+
+.box.small-1:hover {
+    color: white; /* Text color on hover */
+    background-color: #6a93f2;
+    box-shadow: 0 0 5px #6a93f2; /* Glow effect on hover */
+}
+
+.container-fluid-2 {
+    width: 80%; /* Full width */
+    height: 80%; /* Full height */
+    margin-left: 10%;
+    margin-top: 10px;
+    position: relative;
+}
